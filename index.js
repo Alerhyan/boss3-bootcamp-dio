@@ -24,14 +24,19 @@ class Hero {
                 ataque = 'um ataque indefinido';
         }
 
-        console.log(`o ${this.tipo} atacou usando ${ataque}`);
+        console.log(`O ${this.tipo} com nome ${this.nome} e idade ${this.idade} anos, atacou usando ${ataque}`);
     }
 }
 
 // Exemplo de uso da classe
-const heroi1 = new Hero('Aragorn', 30, 'guerreiro');
-const heroi2 = new Hero('Gandalf', 1000, 'mago');
+const heroi1 = new Hero('Stalfy', 30, 'monge');
+const heroi2 = new Hero('Takayashy', 1000, 'ninja');
+const heroi3 = new Hero('Andergor', 54, 'guerreiro');
+const heroi4 = new Hero('Gensormir', 3254, 'mago');
+
 
 heroi1.atacar();  // Saída: o guerreiro atacou usando espada
 heroi2.atacar();  // Saída: o mago atacou usando magia
+heroi3.atacar();
+heroi4.atacar();
 
